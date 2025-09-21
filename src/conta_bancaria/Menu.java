@@ -52,7 +52,6 @@ public class Menu {
 				case 5:
 					System.out.println("Apagar a conta\n\n");
 					break;
-					
 				case 6:
 					System.out.println("Saque\n\n");
 					break;
@@ -73,7 +72,7 @@ public class Menu {
 	}
 	public static void sobre() {
 		System.out.println("*****************************************");
-		System.out.println("Projeto Desenvolvido por: ");
+		System.out.println("Projeto Desenvolvido por:");
 		System.out.println("Marcia Condarco");
 		System.out.println("https://github.com/MarciaCondarco");
 		System.out.println("*****************************************");
