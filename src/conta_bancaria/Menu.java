@@ -2,6 +2,8 @@ package conta_bancaria;
 
 import java.util.Scanner;
 
+import conta_bancaria.util.Cores;
+
 public class Menu {
 
 	public static void main(String[] args) {
@@ -10,22 +12,22 @@ public class Menu {
 		int opcao;
 		
 		while(true) {
-			System.out.println("*****************************");
+			System.out.println(Cores.TEXT_GREEN + "*****************************************");
 			System.out.println("	BANCO DO BRASIL COM Z	 ");
-			System.out.println("*****************************");
+			System.out.println(Cores.TEXT_GREEN + "*****************************************");
 			System.out.println("                             ");
-			System.out.println("	1 - Criar conta 		   		");
-			System.out.println("	2 - Listar todas as contas	 ");
-			System.out.println("	3 - Buscar Conta por Numero 		 ");
-			System.out.println("	4 - Atualizar Dados da Conta 		 ");
-			System.out.println("	5 - Apagar conta 		 ");
-			System.out.println("	6 - Sacar 		 ");
-			System.out.println("	7 - Depositar 		 ");
-			System.out.println("	8 - Transferir valores entre Contas		 ");
-			System.out.println("	0 - Sair	 ");
-			System.out.println("										");
-			System.out.println("*****************************************");
-			System.out.println("Entre com a opção desejada: ");
+			System.out.println(Cores.TEXT_CYAN + "	1 - Criar conta 		   		");
+			System.out.println(Cores.TEXT_CYAN + "	2 - Listar todas as contas	 ");
+			System.out.println(Cores.TEXT_CYAN + "	3 - Buscar Conta por Numero 		 ");
+			System.out.println(Cores.TEXT_CYAN + "	4 - Atualizar Dados da Conta 		 ");
+			System.out.println(Cores.TEXT_CYAN + "	5 - Apagar conta 		 ");
+			System.out.println(Cores.TEXT_CYAN + "	6 - Sacar 		 ");
+			System.out.println(Cores.TEXT_CYAN + "	7 - Depositar 		 ");
+			System.out.println(Cores.TEXT_CYAN + "	8 - Transferir valores entre Contas		 ");
+			System.out.println(Cores.TEXT_CYAN + "	0 - Sair	 ");
+			System.out.println(Cores.TEXT_CYAN + "										");
+			System.out.println(Cores.TEXT_GREEN + "*****************************************");
+			System.out.println(Cores.TEXT_WHITE_BOLD + "Entre com a opção desejada: ");
 			System.out.println("										");
 			
 			opcao = leia.nextInt();
