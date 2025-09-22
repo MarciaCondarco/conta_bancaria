@@ -66,6 +66,40 @@ public class Conta {
 	}
 	
 	
+	public boolean sacar(float valor) {
+		if(this.saldo < valor) {
+			System.out.println("\n Saldo insuficiente!");
+			return false;
+		}
+		
+		this.saldo = this.saldo - valor;
+		return true;
+	}
 	
+	
+	public void depositar(float valor) {
+		this.saldo = this.saldo + valor;
+	}
+	
+	public void visualizar() {
+		
+		String tipo = "";
+		
+		switch(this.tipo) {
+			case 1 -> tipo = "Conta Corrente";
+			case 2 -> tipo = "Conta Poupansa";
+			default -> tipo = "Desconhecido";
+		}
+		
+		System.out.println("\n***********************************************");
+		System.out.println("Dados da conta");
+		System.out.println("*************************************************");
+		System.out.printf("Numero da conta: %d%n", this.numero);
+		System.out.printf("Numero da agencia: %d%n", this.agencia);
+		System.out.printf("tipo da conta: %s%n", tipo);
+		System.out.printf("Titular da conta: %s%n", this.titular);
+		System.out.printf("Saldo da conta: %.2f%n", this.saldo);	
+	}
+
 	
 }

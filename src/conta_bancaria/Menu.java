@@ -15,11 +15,29 @@ public class Menu {
 		
 		Conta c1 = new Conta(1,123, 1, "Cintia Dourado", 500000.00f);
 		
+		Conta c2 = new Conta(1,123, 2, "Priscila Lins", 200000.00f);
+		
 		System.out.println("o saldo da conta é: " + c1.getSaldo());
 		
 		c1.setSaldo(600000.00f);
 		
 		System.out.println("o saldo da conta é: " + c1.getSaldo());
+		
+		//encapsulamento -> proteger os atributos da classe 
+		
+		c1.visualizar();
+		
+		c2.visualizar();
+		
+		System.out.println(c1.sacar(1000));
+		System.out.println("o saldo da conta é: " + c1.getSaldo());
+		System.out.println(c2.sacar(1000000000));
+		System.out.println("o saldo da conta é: " + c2.getSaldo());
+		
+		c1.depositar(5000);
+		System.out.println("o saldo da conta é: " + c1.getSaldo());
+
+		
 		while(true) {
 			System.out.println(Cores.TEXT_GREEN + "*****************************************");
 			System.out.println("	BANCO DO BRASIL COM Z	 ");
