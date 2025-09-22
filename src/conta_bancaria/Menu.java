@@ -1,7 +1,7 @@
 package conta_bancaria;
 
 import java.util.Scanner;
-
+import conta_bancaria.model.Conta;
 import conta_bancaria.util.Cores;
 
 public class Menu {
@@ -11,6 +11,15 @@ public class Menu {
 		
 		int opcao;
 		
+		//instânciar objetos da classe conta
+		
+		Conta c1 = new Conta(1,123, 1, "Cintia Dourado", 500000.00f);
+		
+		System.out.println("o saldo da conta é: " + c1.getSaldo());
+		
+		c1.setSaldo(600000.00f);
+		
+		System.out.println("o saldo da conta é: " + c1.getSaldo());
 		while(true) {
 			System.out.println(Cores.TEXT_GREEN + "*****************************************");
 			System.out.println("	BANCO DO BRASIL COM Z	 ");
