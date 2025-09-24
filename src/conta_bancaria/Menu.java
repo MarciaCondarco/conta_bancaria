@@ -3,6 +3,7 @@ package conta_bancaria;
 import java.util.Scanner;
 import conta_bancaria.model.Conta;
 import conta_bancaria.model.ContaCorrente;
+import conta_bancaria.model.ContaPoupanca;
 import conta_bancaria.util.Cores;
 
 public class Menu {
@@ -54,6 +55,11 @@ public class Menu {
 		//Depositar
 		cc1.depositar(5000.00f);
 		cc1.visualizar();
+		
+		//instanciar objetos da classe conta poupança
+		
+		ContaPoupanca cp = new ContaPoupanca(3, 456, 2, "Marcia Condarco", 1000.00f, 1);
+		cp.visualizar();
 		
 		while(true) {
 			System.out.println(Cores.TEXT_GREEN + "*****************************************");
