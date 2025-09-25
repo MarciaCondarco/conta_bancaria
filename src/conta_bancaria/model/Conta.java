@@ -1,7 +1,6 @@
 package conta_bancaria.model;
 
-public class Conta {
-
+public abstract class Conta {
 	//atributos da classe 
 	
 	private int numero;
